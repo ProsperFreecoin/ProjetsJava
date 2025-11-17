@@ -47,7 +47,7 @@ public class Article {
     }
 
     public void setDisponibilite(int disponibilite) {
-        if(this.disponibilite <= this.stockMin){
+        if(disponibilite <= this.stockMin){
             System.out.println("Impossible de destocker");
         }else{
             this.disponibilite=disponibilite;
@@ -59,10 +59,10 @@ public class Article {
     }
 
     public void setStockMin(int stockMin) {
-        if(this.stockMin>=this.disponibilite){
+        if(stockMin>=this.disponibilite){
             System.out.println("Impossible de destocker");
         }else{
-            this.stockMin=stockMin;
+            stockMin=stockMin;
         }
     }
 
@@ -75,7 +75,7 @@ public class Article {
     }
     
     public void approvisionner(int quantite){
-        if(this.disponibilite<=this.stockMin){
+        if(disponibilite<=this.stockMin){
             System.out.println("Vous ne pouvez rien ajouter");
         }else{
             this.disponibilite+=quantite;

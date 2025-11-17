@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
 
        Article article=new Article();
-       article.setDisponibilite(2);
+       article.setDisponibilite(42);
        article.setStockMin(22);
        article.approvisionner(3);
        article.destocker(2);
